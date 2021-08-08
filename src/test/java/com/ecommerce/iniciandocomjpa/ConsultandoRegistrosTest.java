@@ -3,36 +3,8 @@ package com.ecommerce.iniciandocomjpa;
 import com.ecommerce.model.Produto;
 import org.junit.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-public class ConsultandoRegistrosTest {
-
-    private static EntityManagerFactory entityManagerFactory;
-
-    private EntityManager entityManager;
-
-    @BeforeClass
-    public static void setUpBeforeClass(){
-        entityManagerFactory = Persistence
-                .createEntityManagerFactory("Ecommerce-PU");
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass(){
-        entityManagerFactory.close();
-    }
-
-    @Before
-    public void setUp(){
-        entityManager = entityManagerFactory.createEntityManager();
-    }
-
-    @After
-    public void tearDown(){
-        entityManager.close();
-    }
+//classe generica para testes
+public class ConsultandoRegistrosTest extends EntityManagerTest{
 
     @Test
     public void buscarPorIdentificador(){
@@ -40,4 +12,15 @@ public class ConsultandoRegistrosTest {
         Assert.assertNotNull(produto);
         Assert.assertEquals("kindle", produto.getNome());
     }
+
+    @Test
+    public void atualizarReferencia(){
+        Produto produto = entityManager.find(Produto.class,1);
+        produto.setNome("microfone Samson");
+
+        entityManager.refresh(produto);
+
+        Assert.assertEquals("kindle", produto.getNome());
+    }
+
 }

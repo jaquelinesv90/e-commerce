@@ -8,8 +8,8 @@
             <!-- as tags useTimezone e serverTimezone são necessárias apenas para windows  -->
             <property name="javax.persistence.jdbc.url"
             value="jdbc:mysql://localhost/ecommerce?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC" />
-            <property name="javax.persistence.jdbc.user" value="admin" />
-            <property name="javax.persistence.jdbc.password" value="admin" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="KRA4nkGU33Gy1%"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
 
             <!-- propriedades especificas do jpa  -->
