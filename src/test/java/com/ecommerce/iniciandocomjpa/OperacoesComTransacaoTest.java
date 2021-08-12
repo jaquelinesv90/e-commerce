@@ -52,6 +52,12 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
 
     @Test
     public void atualizarObjeto(){
+        // ESTA É APENAS UMA FORMA DE FAZER ATUALIZAÇÃO COM MERGE
+        //Todos os atributos do objeto tem que ser preenchidos, para que a atualização
+        //seja coerente.Caso eu queira atualizar somente por exemplo o nome, e não colocar
+        //valor nos outros campos o entityManager vai entender que vc quer deixar esses
+        // campos não preenchidos como nulo.Para resolver isso ou o usuario passa os valores
+        //e voce atribui nos outros campos ou busca da base de dados.
         Produto produto = new Produto();
         produto.setId(1);
         produto.setNome("kindle paperwhite");
@@ -59,8 +65,18 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
         produto.setPreco(new BigDecimal(599));
 
         entityManager.getTransaction().begin();
-        entityManager.merge();
+        entityManager.merge(produto);
         entityManager.getTransaction().commit();
+
+        //o clear aqui é necessário porque a instancia de produto(uma cópia) vai ser colocada
+        // na memória do entityManager(para ele gerenciar)
+        entityManager.clear();
+
+        // se a gente executar o find sem fazer o clear ele vai executar o find e pegar
+        // da memória, como a gente quer pegar da base de dados, então a gente executa o clear
+        Produto produtoVerificacao = entityManager.find(Produto.class,3);
+        Assert.assertEquals("Kindle paperWhite",produtoVerificacao.getNome());
+
     }
 
 }
