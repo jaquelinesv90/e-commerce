@@ -22,5 +22,4 @@ public class ConsultandoRegistrosTest extends EntityManagerTest{
 
         Assert.assertEquals("kindle", produto.getNome());
     }
-
 }

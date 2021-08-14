@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="45fe29fe-394c-4e29-a942-981a6e335c45" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/util/IniciarUnidadeDePersistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/util/IniciarUnidadeDePersistencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/EntityManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/EntityManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/OperacoesComTransacaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/OperacoesComTransacaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.OperacoesComTransacaoTest.atualizarObjeto">
     <configuration name="ConsultandoRegistrosTest.buscarPorIdentificador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ecommerce" />
       <extension name="coverage">
@@ -51,8 +56,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OperacoesComTransacaoTest.atualizarObjeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.iniciandocomjpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ecommerce.iniciandocomjpa" />
+      <option name="MAIN_CLASS_NAME" value="com.ecommerce.iniciandocomjpa.OperacoesComTransacaoTest" />
+      <option name="METHOD_NAME" value="atualizarObjeto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OperacoesComTransacaoTest.atualizarObjeto" />
         <item itemvalue="JUnit.ConsultandoRegistrosTest.buscarPorIdentificador" />
       </list>
     </recent_temporary>

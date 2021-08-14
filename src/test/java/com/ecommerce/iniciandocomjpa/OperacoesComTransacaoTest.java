@@ -79,4 +79,16 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
 
     }
 
+    @Test
+    public void atualizarObjetoGerenciado(){
+        //Quando eu faço o find ele busca na base e constrói a instancia
+        // do produto,coloca como objeto gerenciado na memória do
+        // entityManager e depois ele retorna e atribui para nossa variável.
+        Produto produto = entityManager.find(Produto.class,1);
+
+        entityManager.getTransaction().begin();
+        produto.setNome("kindle paperwhite 2 Geracao");
+        entityManager.getTransaction().commit();
+    }
+
 }

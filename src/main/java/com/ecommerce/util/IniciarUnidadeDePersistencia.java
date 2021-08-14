@@ -6,6 +6,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.EntityManagerFactory;
 
+// Aqui é instanciada a interface do EntityManager
+// é através da instancia do EntityManager que a gente faz todas as operações com JPA
 public class IniciarUnidadeDePersistencia {
 
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class IniciarUnidadeDePersistencia {
         Produto produto = entityManager.find(Produto.class, 1);
         System.out.println(produto.getNome());
 
+        //fechando o entityManager
         entityManager.close();
         entityManagerFactory.close();
     }
