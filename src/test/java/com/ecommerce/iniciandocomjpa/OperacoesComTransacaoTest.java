@@ -56,8 +56,8 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
         //Todos os atributos do objeto tem que ser preenchidos, para que a atualização
         //seja coerente.Caso eu queira atualizar somente por exemplo o nome, e não colocar
         //valor nos outros campos o entityManager vai entender que vc quer deixar esses
-        // campos não preenchidos como nulo.Para resolver isso ou o usuario passa os valores
-        //e voce atribui nos outros campos ou busca da base de dados.
+        // campos não preenchidos como nulo.Para resolver isso ou o usuario passa os valores(os mesmos valores)
+        //e voce atribui nos outros campos ou busca da base de dados pelo id.
         Produto produto = new Produto();
         produto.setId(1);
         produto.setNome("kindle paperwhite");
@@ -89,6 +89,54 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
         entityManager.getTransaction().begin();
         produto.setNome("kindle paperwhite 2 Geracao");
         entityManager.getTransaction().commit();
+    }
+
+    @Test
+    public void inserirObjetoComMerge(){
+        Produto produto = new Produto();
+
+        produto.setId(4);
+        produto.setNome("Microfone Rode Videmic");
+        produto.setDescricao("A melhor qualidade de som");
+        produto.setPreco(new BigDecimal(1000));
+
+        //abrindo a transação
+        entityManager.getTransaction().begin();
+        //Aqui a gente vai utilizar o método merge para persistir
+        entityManager.merge(produto);
+
+        entityManager.getTransaction().commit();
+        //limpando a memória
+        entityManager.clear();
+
+        Produto produtoVerificacao = entityManager.find(Produto.class,produto.getId());
+        Assert.assertNotNull(produtoVerificacao);
+    }
+
+
+    @Test
+    public void mostrarDiferencaPersistMerge(){
+        Produto produtoPersist = new Produto();
+
+        produtoPersist.setId(5);
+        produtoPersist.setNome("Smartphone One Plus");
+        produtoPersist.setDescricao("O processador mais rápido");
+        produtoPersist.setPreco(new BigDecimal(2000));
+
+        entityManager.getTransaction().begin();
+        /* persiste: somente para persistir não é possível atualizar, outra coisa é ele
+         pega a instancia da entidade'ali produtoPersist', o valor dela e coloca na memória
+         do entityManager, para ela ser gerenciada.
+        */
+        // merge: persiste e atualiza
+        entityManager.persist(produtoPersist);
+        entityManager.getTransaction().commit();
+
+        //limpando a memória
+        entityManager.clear();
+
+        Produto produtoVerificacao = entityManager.find(Produto.class,produtoPersist.getId());
+        Assert.assertNotNull(produtoVerificacao);
     }
 
 }
