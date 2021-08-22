@@ -114,6 +114,14 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
     }
 
 
+    /* persiste: somente para persistir não é possível atualizar, outra coisa é ele
+        pega a instancia da entidade'ali produtoMerge', o valor dela e coloca na memória
+        do entityManager, para ela ser gerenciada.
+    */
+
+    /* merge: persiste e atualiza, outra coisa ele pega a instancia 'produtoMerge' e
+       a cópia ele joga para o entityManager gerenciar.
+     */
     @Test
     public void mostrarDiferencaPersistMerge(){
         Produto produtoPersist = new Produto();
@@ -124,19 +132,33 @@ public class OperacoesComTransacaoTest extends EntityManagerTest{
         produtoPersist.setPreco(new BigDecimal(2000));
 
         entityManager.getTransaction().begin();
-        /* persiste: somente para persistir não é possível atualizar, outra coisa é ele
-         pega a instancia da entidade'ali produtoPersist', o valor dela e coloca na memória
-         do entityManager, para ela ser gerenciada.
-        */
-        // merge: persiste e atualiza
         entityManager.persist(produtoPersist);
         entityManager.getTransaction().commit();
 
-        //limpando a memória
+        entityManager.clear();
+        Produto produtoVerificaoPersist = entityManager.find(Produto.class,produtoPersist.getId());
+        Assert.assertNotNull(produtoVerificaoPersist);
+
+
+        Produto produtoMerge = new Produto();
+
+        produtoMerge.setId(5);
+        produtoMerge.setNome("Notebook Dell");
+        produtoMerge.setDescricao("O melhor da Categoria");
+        produtoMerge.setPreco(new BigDecimal(2000));
+
+        // adicionar essa linha, pois ele devolve a cópia como retorno da chamada dele.
+        produtoMerge = entityManager.merge(produtoMerge);
+        // setar o nome não funcionará pois esta instancia não é gerenciada, não faz efeito essa alteração
+        produtoMerge.setNome("Notebook Dell 2");
+
+        entityManager.getTransaction().begin();
+        entityManager.merge(produtoMerge);
+
+        entityManager.getTransaction().commit();
         entityManager.clear();
 
-        Produto produtoVerificacao = entityManager.find(Produto.class,produtoPersist.getId());
-        Assert.assertNotNull(produtoVerificacao);
+        Produto produtoVerificacaoMerge = entityManager.find(Produto.class,produtoMerge.getId());
+        Assert.assertNotNull(produtoVerificacaoMerge);
     }
-
 }
