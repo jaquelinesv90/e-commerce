@@ -2,6 +2,7 @@ package com.ecommerce.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
 import lombok.EqualsAndHashCode;
@@ -12,6 +13,7 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
+@Table(name="Produto")
 public class Produto {
 
     @EqualsAndHashCode.Include
