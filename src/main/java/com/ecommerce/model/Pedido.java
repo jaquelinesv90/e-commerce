@@ -4,9 +4,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -21,14 +19,21 @@ public class Pedido {
     @Id
     private Integer id;
 
+    @Column(name="data_pedido")
     private LocalDateTime dataPedido;
 
+    @Column(name="data_conclusao")
     private LocalDateTime dataConclusao;
 
+    @Column(name="nota_fiscal_id")
     private Integer notaFiscalId;
 
     private BigDecimal total;
 
     private StatusPedido status;
+
+    // as colunas que estão nesta classe(EnderecoEntregaPedido) fazem parte da tabela pedido
+    @Embedded
+    private EnderecoEntregaPedido enderecoEntrega;
 
 }
