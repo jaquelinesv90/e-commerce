@@ -2,7 +2,8 @@ package com.ecommerce.model;
 
 import javax.persistence.Embeddable;
 
-// Objeto embutido - esta classe é embutivel em outra classe
+// Objeto embutido - esta classe é embutivel em outra classe - embutir em nossas entidades
+// tipos que não são entidades
 @Embeddable
 public class EnderecoEntregaPedido {
 
