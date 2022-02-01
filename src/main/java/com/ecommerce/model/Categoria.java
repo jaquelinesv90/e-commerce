@@ -24,7 +24,7 @@ public class Categoria {
             valueColumnName = "next_val",
             initialValue = 0,
             allocationSize = 50)*/
-    
+
     //@GeneratedValue(strategy = GenerationType.AUTO)
     // @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
     @SequenceGenerator(name= "seq", sequenceName="sequencia_chave_primaria",initialValue=10)
