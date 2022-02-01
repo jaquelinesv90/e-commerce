@@ -14,8 +14,6 @@ import javax.persistence.*;
 @Table(name="categoria")
 public class Categoria {
 
-    @EqualsAndHashCode.Include
-    @Id
     /*@GeneratedValue(strategy = GenerationType.TABLE)
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "tabela")
     @TableGenerator(name = "tabela", table = "hibernate_sequences",
@@ -27,7 +25,10 @@ public class Categoria {
 
     //@GeneratedValue(strategy = GenerationType.AUTO)
     // @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
-    @SequenceGenerator(name= "seq", sequenceName="sequencia_chave_primaria",initialValue=10)
+    //@SequenceGenerator(name= "seq", sequenceName="sequencia_chave_primaria",initialValue=10)
+    @EqualsAndHashCode.Include
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String nome;
