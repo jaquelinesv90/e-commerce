@@ -20,6 +20,11 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    // o JoinColumn não é obrigatório
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente clienteId;
+
     @Column(name="data_pedido")
     private LocalDateTime dataPedido;
 
