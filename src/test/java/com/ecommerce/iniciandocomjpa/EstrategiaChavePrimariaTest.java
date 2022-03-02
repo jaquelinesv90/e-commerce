@@ -1,9 +1,10 @@
 package com.ecommerce.iniciandocomjpa;
 
+import com.ecommerce.EntityManagerTest;
 import com.ecommerce.model.Categoria;
 import org.junit.Assert;
 
-public class EstrategiaChavePrimariaTest extends EntityManagerTest{
+public class EstrategiaChavePrimariaTest extends EntityManagerTest {
 
     public void testarEstrategiaAuto(){
         Categoria categoria = new Categoria();

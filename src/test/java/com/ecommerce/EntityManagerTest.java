@@ -1,4 +1,4 @@
-package com.ecommerce.iniciandocomjpa;
+package com.ecommerce;
 
 import org.junit.*;
 

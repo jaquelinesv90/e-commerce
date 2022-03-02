@@ -1,10 +1,11 @@
 package com.ecommerce.iniciandocomjpa;
 
+import com.ecommerce.EntityManagerTest;
 import com.ecommerce.model.Produto;
 import org.junit.*;
 
 //classe generica para testes
-public class ConsultandoRegistrosTest extends EntityManagerTest{
+public class ConsultandoRegistrosTest extends EntityManagerTest {
 
     @Test
     public void buscarPorIdentificador(){

@@ -1,12 +1,13 @@
 package com.ecommerce.iniciandocomjpa;
 
+import com.ecommerce.EntityManagerTest;
 import com.ecommerce.model.Produto;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.math.BigDecimal;
 
-public class OperacoesComTransacaoTest extends EntityManagerTest{
+public class OperacoesComTransacaoTest extends EntityManagerTest {
 
     @Test
     public void inserirOPrimeiroObjeto(){

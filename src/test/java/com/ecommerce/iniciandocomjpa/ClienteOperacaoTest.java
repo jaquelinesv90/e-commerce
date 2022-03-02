@@ -1,9 +1,10 @@
 package com.ecommerce.iniciandocomjpa;
 
+import com.ecommerce.EntityManagerTest;
 import com.ecommerce.model.Cliente;
 import org.junit.Test;
 
-public class ClienteOperacaoTest extends EntityManagerTest{
+public class ClienteOperacaoTest extends EntityManagerTest {
 
     @Test
     public void inserir(){

@@ -22,8 +22,9 @@ public class ItemPedido {
     @Column(name= "pedido_id")
     private Integer pedidoId;
 
-    @Column(name="produto_id")
-    private Integer produtoId;
+    @ManyToOne
+    @JoinColumn(name ="produtoId_id")
+    private Produto produtoId;
 
     @Column(name="preco_produto")
     private BigDecimal precoProduto;

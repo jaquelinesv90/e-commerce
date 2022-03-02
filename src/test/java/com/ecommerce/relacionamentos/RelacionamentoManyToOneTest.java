@@ -1,6 +1,6 @@
 package com.ecommerce.relacionamentos;
 
-import com.ecommerce.iniciandocomjpa.EntityManagerTest;
+import com.ecommerce.EntityManagerTest;
 import com.ecommerce.model.Cliente;
 import com.ecommerce.model.Pedido;
 import com.ecommerce.model.StatusPedido;
