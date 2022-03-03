@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fe29fe-394c-4e29-a942-981a6e335c45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/relacionamentos/RelacionamentoManyToOneItemPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ClienteOperacaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ClienteOperacaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/EntityManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/EntityManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/EstrategiaChavePrimariaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/EstrategiaChavePrimariaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/OperacoesComTransacaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/OperacoesComTransacaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/relacionamentos/RelacionamentoManyToOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/relacionamentos/RelacionamentoManyToOneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/ItemPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/ItemPedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Pedido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ClienteOperacaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ClienteOperacaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/EntityManagerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/EstrategiaChavePrimariaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/EstrategiaChavePrimariaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/OperacoesComTransacaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/OperacoesComTransacaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/relacionamentos/RelacionamentoManyToOneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/relacionamentos/RelacionamentoManyToOneTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +48,7 @@
       <recent name="com.ecommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RelacionamentoManyToOneTest">
+  <component name="RunManager" selected="JUnit.ConsultandoRegistrosTest">
     <configuration name="IniciarUnidadeDePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ecommerce.util.IniciarUnidadeDePersistencia" />
       <module name="ecommerce" />
@@ -76,18 +62,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsultandoRegistrosTest.buscarPorIdentificador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsultandoRegistrosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ecommerce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ecommerce.*" />
+          <option name="PATTERN" value="com.ecommerce.iniciandocomjpa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ecommerce.iniciandocomjpa" />
       <option name="MAIN_CLASS_NAME" value="com.ecommerce.iniciandocomjpa.ConsultandoRegistrosTest" />
-      <option name="METHOD_NAME" value="buscarPorIdentificador" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConsultandoRegistrosTest" />
         <item itemvalue="JUnit.RelacionamentoManyToOneTest" />
         <item itemvalue="JUnit.RelacionamentoManyToOneTest.verificarRelacionamento" />
         <item itemvalue="Application.IniciarUnidadeDePersistencia" />
         <item itemvalue="JUnit.OperacoesComTransacaoTest.atualizarObjeto" />
-        <item itemvalue="JUnit.ConsultandoRegistrosTest.buscarPorIdentificador" />
       </list>
     </recent_temporary>
   </component>

@@ -2,25 +2,27 @@ package com.ecommerce.iniciandocomjpa;
 
 import com.ecommerce.EntityManagerTest;
 import com.ecommerce.model.Produto;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Test;
 
-//classe generica para testes
 public class ConsultandoRegistrosTest extends EntityManagerTest {
 
     @Test
-    public void buscarPorIdentificador(){
+    public void busarPorIdentificador() {
         Produto produto = entityManager.find(Produto.class, 1);
+//        Produto produto = entityManager.getReference(Produto.class, 1);
+
         Assert.assertNotNull(produto);
-        Assert.assertEquals("kindle", produto.getNome());
+        Assert.assertEquals("Kindle", produto.getNome());
     }
 
     @Test
-    public void atualizarReferencia(){
-        Produto produto = entityManager.find(Produto.class,1);
-        produto.setNome("microfone Samson");
+    public void atualizarAReferencia() {
+        Produto produto = entityManager.find(Produto.class, 1);
+        produto.setNome("Microfone Samson");
 
         entityManager.refresh(produto);
 
-        Assert.assertEquals("kindle", produto.getNome());
+        Assert.assertEquals("Kindle", produto.getNome());
     }
 }
