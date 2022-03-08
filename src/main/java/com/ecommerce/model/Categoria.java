@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -33,8 +34,13 @@ public class Categoria {
 
     private String nome;
 
-    @Column(name = "categoria_pai_id")
-    private Integer categoriaPaiId;
+    //Exemplo de auto relacionamento
+    @ManyToOne
+    @JoinColumn(name = "categoria_pai_id")
+    private Categoria categoriaPaiId;
+
+    @OneToMany(mappedBy = "categoriaPai") //no mappedBy a gente coloca o atributo da classe que está na lista
+    private List<Categoria> categorias;  // onde o JPA vai buscar os metadados
 
 
 }
