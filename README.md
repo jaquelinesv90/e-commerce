@@ -5,6 +5,6 @@ Modelo de domínio do projeto.
 
 <span align="center">
  
- ![jaquelinesv90](https://github.com/jaquelinesv90/e-commerce/issues/1#issue-1174591570)
+ ![EJPA - Domain Model](https://user-images.githubusercontent.com/3721252/159170568-7d1b9640-cebf-42bc-a9c5-b0e7796f574e.jpg)
  
 </span>
