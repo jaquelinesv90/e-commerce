@@ -2,6 +2,7 @@ package com.ecommerce.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -25,5 +26,11 @@ public class Produto {
 
     private BigDecimal preco;
 
+    // Produto é o owner da relação
+    @ManyToMany
+    @JoinTable(name = "produto_categoria",
+            joinColumns = @JoinColumn(name = "produto_id"),
+            inverseJoinColumns = @JoinColumn(name = "categoria_id"))
+    private List<Categoria> categorias;
 
 }

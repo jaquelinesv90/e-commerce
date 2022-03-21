@@ -42,5 +42,7 @@ public class Categoria {
     @OneToMany(mappedBy = "categoriaPai") //no mappedBy a gente coloca o atributo da classe que está na lista
     private List<Categoria> categorias;  // onde o JPA vai buscar os metadados
 
-
+    //mapeando a volta do relacionamento com produto
+    @ManyToMany(mappedBy = "categorias")
+    private List<Produto> produtos;
 }
