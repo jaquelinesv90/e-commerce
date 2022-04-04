@@ -42,6 +42,10 @@ public class Pedido {
 
     private StatusPedido status;
 
+    //mapeando a volta, pagamentoCartao é owner da relação(não é obrigatório,mapear a volta)
+    @OneToOne(mappedBy = "pedido")
+    private PagamentoCartao pagamento;
+
     // as colunas que estão nesta classe(EnderecoEntregaPedido) fazem parte da tabela pedido
     @Embedded
     private EnderecoEntregaPedido enderecoEntrega;
