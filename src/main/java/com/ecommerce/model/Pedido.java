@@ -35,7 +35,8 @@ public class Pedido {
     @Column(name="data_conclusao")
     private LocalDateTime dataConclusao;
 
-    @Column(name="nota_fiscal_id")
+    //mapeando a volta, notaFiscal é o owner da relação
+    @OneToOne(mappedBy="nota_fiscal_id")
     private Integer notaFiscalId;
 
     private BigDecimal total;
