@@ -1,6 +1,7 @@
 # e-commerce
 Repositório atualizado constantemente - repositório base do curso especialista em JPA Algaworks-  Portuguese version - IDE: IntellijIdea
 Constantly updated repository - base repository of the specialist course in JPA - Portuguese version - IDE: IntellijIdea
+Somente Back end
 
 Modelo de domínio do projeto.
 
