@@ -21,8 +21,12 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    // o JoinColumn não é obrigatório
-    @ManyToOne
+    /*  o JoinColumn não é obrigatório
+        optional = false, se toda vez que eu for salvar
+        um pedido eu preciso de um cliente eu adiciono esta
+        anotação.
+     */
+    @ManyToOne(optional=false)
     @JoinColumn(name = "cliente_id")
     private Cliente clienteId;
 

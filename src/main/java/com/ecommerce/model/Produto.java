@@ -26,6 +26,9 @@ public class Produto {
 
     private BigDecimal preco;
 
+    @OneToOne(mappedBy = "produto")
+    private Estoque estoque;
+
     // Produto é o owner da relação
     @ManyToMany
     @JoinTable(name = "produto_categoria",
