@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class GerenciamentoTransacoesTest extends EntityManagerTest {
 
-    @Test
+    @Test(expected = Exception.class)
     public void abrirFecharCancelarTransacao(){
         try{
             entityManager.getTransaction().begin();
