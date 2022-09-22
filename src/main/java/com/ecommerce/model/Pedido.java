@@ -33,8 +33,11 @@ public class Pedido {
     @OneToMany(mappedBy = "pedido")
     private List<ItemPedido> itens;
 
-    @Column(name="data_pedido")
-    private LocalDateTime dataPedido;
+    @Column(name="data_criação")
+    private LocalDateTime dataCriacao;
+
+    @Column(name="data_ultima_atualizacao")
+    private LocalDateTime dataUltimaAtualizacao;
 
     @Column(name="data_conclusao")
     private LocalDateTime dataConclusao;
@@ -54,5 +57,15 @@ public class Pedido {
     // as colunas que estão nesta classe(EnderecoEntregaPedido) fazem parte da tabela pedido
     @Embedded
     private EnderecoEntregaPedido enderecoEntrega;
+
+    @PrePersist
+    public void aoPersistir(){
+        dataCriacao = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    public void aoAtualizar(){
+        dataUltimaAtualizacao = LocalDateTime.now();
+    }
 
 }
