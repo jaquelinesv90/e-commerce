@@ -28,7 +28,7 @@ public class Pedido {
      */
     @ManyToOne(optional=false)
     @JoinColumn(name = "cliente_id")
-    private Cliente clienteId;
+    private Cliente cliente;
 
     @OneToMany(mappedBy = "pedido")
     private List<ItemPedido> itens;
@@ -58,14 +58,26 @@ public class Pedido {
     @Embedded
     private EnderecoEntregaPedido enderecoEntrega;
 
+    //@PrePersist
+    //@PreUpdate
+    public void calcularTotal(){
+        if(itens != null){
+            total = itens.stream().map(ItemPedido::getPrecoProduto)
+                    .reduce(BigDecimal.ZERO,BigDecimal::add);
+        }
+    }
     @PrePersist
     public void aoPersistir(){
         dataCriacao = LocalDateTime.now();
+        calcularTotal();
     }
 
     @PreUpdate
     public void aoAtualizar(){
         dataUltimaAtualizacao = LocalDateTime.now();
+        calcularTotal();
     }
+
+
 
 }
