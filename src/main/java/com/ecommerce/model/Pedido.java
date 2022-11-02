@@ -43,8 +43,8 @@ public class Pedido {
     private LocalDateTime dataConclusao;
 
     //mapeando a volta, notaFiscal é o owner da relação
-    @OneToOne(mappedBy="nota_fiscal_id")
-    private Integer notaFiscalId;
+    @OneToOne(mappedBy="pedido")
+    private NotaFiscal notaFiscal;
 
     private BigDecimal total;
 
@@ -57,6 +57,10 @@ public class Pedido {
     // as colunas que estão nesta classe(EnderecoEntregaPedido) fazem parte da tabela pedido
     @Embedded
     private EnderecoEntregaPedido enderecoEntrega;
+
+    public boolean isPago(){
+        return StatusPedido.PAGO.equals(status);
+    }
 
     //@PrePersist
     //@PreUpdate
@@ -77,7 +81,5 @@ public class Pedido {
         dataUltimaAtualizacao = LocalDateTime.now();
         calcularTotal();
     }
-
-
 
 }
