@@ -8,7 +8,7 @@ import org.junit.Test;
 public class ConsultandoRegistrosTest extends EntityManagerTest {
 
     @Test
-    public void busarPorIdentificador() {
+    public void buscarPorIdentificador() {
         Produto produto = entityManager.find(Produto.class, 1);
 //        Produto produto = entityManager.getReference(Produto.class, 1);
 

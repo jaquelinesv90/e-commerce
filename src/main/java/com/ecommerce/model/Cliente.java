@@ -21,6 +21,7 @@ public class Cliente {
 
     private String nome;
 
+    @Enumerated(EnumType.STRING)
     private SexoCliente sexo;
 
     @OneToMany(mappedBy = "cliente")
