@@ -31,5 +31,6 @@ public class CallBacksTest  extends EntityManagerTest {
 
         Pedido pedidoVerificacao = entityManager.find(Pedido.class, pedido.getId());
         Assert.assertNotNull(pedidoVerificacao.getDataCriacao());
+        Assert.assertNotNull(pedidoVerificacao.getDataUltimaAtualizacao());
     }
 }

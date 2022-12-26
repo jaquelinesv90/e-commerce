@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 
+import com.ecommerce.listener.GenericoListener;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@EntityListeners({GenericoListener.class})
 @Entity
 @Table(name="Produto")
 public class Produto {
@@ -26,14 +28,14 @@ public class Produto {
 
     private BigDecimal preco;
 
-    @OneToOne(mappedBy = "produto")
-    private Estoque estoque;
-
     // Produto é o owner da relação
     @ManyToMany
     @JoinTable(name = "produto_categoria",
             joinColumns = @JoinColumn(name = "produto_id"),
             inverseJoinColumns = @JoinColumn(name = "categoria_id"))
     private List<Categoria> categorias;
+
+    @OneToOne(mappedBy = "produto")
+    private Estoque estoque;
 
 }

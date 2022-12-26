@@ -1,5 +1,7 @@
 package com.ecommerce.model;
 
+import com.ecommerce.listener.GenericoListener;
+import com.ecommerce.listener.GerarNotaFiscalListener;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,6 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@EntityListeners({GerarNotaFiscalListener.class, GenericoListener.class})
 @Entity
 @Table(name="pedido")
 public class Pedido {
@@ -48,6 +51,7 @@ public class Pedido {
 
     private BigDecimal total;
 
+    @Enumerated(EnumType.STRING)
     private StatusPedido status;
 
     //mapeando a volta, pagamentoCartao é owner da relação(não é obrigatório,mapear a volta)

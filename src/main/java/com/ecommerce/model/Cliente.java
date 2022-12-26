@@ -27,5 +27,4 @@ public class Cliente {
     @OneToMany(mappedBy = "cliente")
     private List<Pedido> pedidos;
 
-
 }

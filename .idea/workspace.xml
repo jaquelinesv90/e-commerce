@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fe29fe-394c-4e29-a942-981a6e335c45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/listener/GenericoListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/CachePrimeiroNivelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/EstadosECicloDeVidaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/listener/GenericoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/listener/GenericoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Categoria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/EnderecoEntregaPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/EnderecoEntregaPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/PagamentoBoleto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/StatusPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/StatusPagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/CallBacksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/CallBacksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/ListenerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/ListenerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

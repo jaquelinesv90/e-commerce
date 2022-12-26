@@ -32,5 +32,4 @@ public class ItemPedido {
 
     private Integer quantidade;
 
-
 }

@@ -34,7 +34,7 @@ public class Categoria {
 
     private String nome;
 
-    //Exemplo de auto relacionamento
+    //Exemplo de auto-relacionamento
     @ManyToOne
     @JoinColumn(name = "categoria_pai_id")
     private Categoria categoriaPaiId;
