@@ -14,10 +14,16 @@ import java.math.BigDecimal;
 @Table(name = "item_pedido")
 public class ItemPedido {
 
+    // chave composta
     @EqualsAndHashCode.Include
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(name = "pedido_id")
+    private Integer pedidoId;
+
+    @EqualsAndHashCode.Include
+    @Id
+    @Column(name = "produto_id")
+    private Integer produtoId;
 
     @ManyToOne(optional = false)
     @JoinColumn(name ="pedido_id")

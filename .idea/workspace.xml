@@ -5,21 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fe29fe-394c-4e29-a942-981a6e335c45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/CachePrimeiroNivelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/EstadosECicloDeVidaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedidoId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/ChaveCompostaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/DetalhesColumnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentobasico/EstrategiaChavePrimariaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/listener/GenericoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/listener/GenericoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/EnderecoEntregaPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/EnderecoEntregaPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Estoque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/ItemPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/PagamentoBoleto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/StatusPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/StatusPagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/CallBacksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/CallBacksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/ListenerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/conhecendoentitymanager/ListenerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/banco-de-dados/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/banco-de-dados/dados-iniciais.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/EnderecoEntregaPedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/EnderecoEntregaPedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Estoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Estoque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/PagamentoBoleto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/PagamentoBoleto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ecommerce/model/StatusPagamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ecommerce/model/StatusPagamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/conhecendoentitymanager/CallBacksTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/conhecendoentitymanager/CallBacksTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/conhecendoentitymanager/ListenerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/conhecendoentitymanager/ListenerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ecommerce/iniciandocomjpa/ConsultandoRegistrosTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +67,7 @@
       <recent name="com.ecommerce.relacionamentos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IniciarUnidadeDePersistencia">
+  <component name="RunManager" selected="JUnit.DetalhesColumnTest.impedirInsercaoDaColunaAtualizacao">
     <configuration name="IniciarUnidadeDePersistencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ecommerce.util.IniciarUnidadeDePersistencia" />
       <module name="e-commerce" />
@@ -91,6 +96,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DetalhesColumnTest.impedirInsercaoDaColunaAtualizacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e-commerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.mapeamentoavancado.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ecommerce.mapeamentoavancado" />
+      <option name="MAIN_CLASS_NAME" value="com.ecommerce.mapeamentoavancado.DetalhesColumnTest" />
+      <option name="METHOD_NAME" value="impedirInsercaoDaColunaAtualizacao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListenerTest.acionarCallBacks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="e-commerce" />
       <extension name="coverage">
@@ -103,21 +124,6 @@
       <option name="MAIN_CLASS_NAME" value="com.ecommerce.conhecendoentitymanager.ListenerTest" />
       <option name="METHOD_NAME" value="acionarCallBacks" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RelacionamentoManyToOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ecommerce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ecommerce.relacionamentos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ecommerce.relacionamentos" />
-      <option name="MAIN_CLASS_NAME" value="com.ecommerce.relacionamentos.RelacionamentoManyToOneTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DetalhesColumnTest.impedirInsercaoDaColunaAtualizacao" />
         <item itemvalue="Application.IniciarUnidadeDePersistencia" />
         <item itemvalue="JUnit.ListenerTest.acionarCallBacks" />
         <item itemvalue="JUnit.RelacionamentoOneToOneNotaFiscalTest.verificarRelacionamento" />
         <item itemvalue="JUnit.ConsultandoRegistrosTest" />
-        <item itemvalue="JUnit.RelacionamentoManyToOneTest" />
       </list>
     </recent_temporary>
   </component>

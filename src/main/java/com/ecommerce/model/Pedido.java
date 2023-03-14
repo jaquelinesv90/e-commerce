@@ -36,10 +36,10 @@ public class Pedido {
     @OneToMany(mappedBy = "pedido")
     private List<ItemPedido> itens;
 
-    @Column(name="data_criação")
+    @Column(name="data_criação", updatable = false)
     private LocalDateTime dataCriacao;
 
-    @Column(name="data_ultima_atualizacao")
+    @Column(name="data_ultima_atualizacao", insertable = false)
     private LocalDateTime dataUltimaAtualizacao;
 
     @Column(name="data_conclusao")
