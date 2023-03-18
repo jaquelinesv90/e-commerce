@@ -14,6 +14,9 @@ import java.math.BigDecimal;
 @Table(name = "item_pedido")
 public class ItemPedido {
 
+    @EmbeddedId
+    private ItemPedidoId id;
+
     // chave composta
     @EqualsAndHashCode.Include
     @Id
