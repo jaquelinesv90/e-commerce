@@ -45,4 +45,20 @@ public class Produto {
     @OneToOne(mappedBy = "produto")
     private Estoque estoque;
 
+    //mapeamento de lista de tipo básico
+    // as tags são guardadas em uma tabela, é possivle customizar
+    // essa tabela com a anotação @CollectionTable
+    @ElementCollection
+    @CollectionTable(name="produto_tag",
+                joinColumns = @JoinColumn(name="produto_id"))
+    @Column(name="tag")
+    private List<String> tags;
+
+
+    //mapeamento de um embeddable- classe embutida
+    @ElementCollection
+    @CollectionTable(name = "produto_atributo",
+            joinColumns=@JoinColumn(name="produto_id"))
+    private List<Atributo> atributos;
+
 }
