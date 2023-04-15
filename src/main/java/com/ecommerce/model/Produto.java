@@ -61,4 +61,5 @@ public class Produto {
             joinColumns=@JoinColumn(name="produto_id"))
     private List<Atributo> atributos;
 
+
 }

@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fe29fe-394c-4e29-a942-981a6e335c45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Atributo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/ElementCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/PropriedadesTransientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/SalvandoArquivosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/nota-fiscal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/NotaFiscal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/NotaFiscal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/ElementCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/mapeamentoavancado/ElementCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
